@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:latest  # Используем последнюю версию Redis
+    container_name: redis
+    ports:
+      - "6379:6379"  # Переадресация порта Redis на хост
+    volumes:
+      - redis_data:/data  # Монтируем volume для сохранения данных Redis
+    restart: always  # Автоматический перезапуск контейнера в случае сбоя
+
+  postgres:
+    image: postgres:latest  # Используем последнюю версию PostgreSQL
+    container_name: postgres
+    environment:
+      POSTGRES_USER: myuser  # Задаем имя пользователя для PostgreSQL
+      POSTGRES_PASSWORD: mypassword  # Пароль для PostgreSQL
+      POSTGRES_DB: mydb  # Имя базы данных
+    ports:
+      - "5432:5432"  # Переадресация порта PostgreSQL на хост
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # Монтируем volume для данных PostgreSQL
+    restart: always  # Автоматический перезапуск контейнера в случае сбоя
+
+volumes:
+  redis_data:
+    driver: local
+  postgres_data:
+    driver: local
