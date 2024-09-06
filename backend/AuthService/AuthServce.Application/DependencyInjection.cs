@@ -1,6 +1,10 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using AuthServce.Application.JWT;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using System.Reflection;
+using System.Text;
 
 namespace AuthServce.Application
 {
@@ -10,7 +14,26 @@ namespace AuthServce.Application
         {
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
 
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
+                {
+                    options.TokenValidationParameters = new()
+                    {
+                        ValidateAudience = false,
+                        ValidateIssuer = false,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new SymmetricSecurityKey
+                                (Encoding.UTF8.GetBytes(configuration["JwtSettings:SecretKey"]!)) //TODO: переменная окружения
+                    };
+                });
+            services.AddAuthorization();
+
+            services.AddScoped<IJwtProvider, JwtProvider>();
+
+
             return services;
         }
+
     }
 }

@@ -29,7 +29,7 @@
 
   <ItemGroup>
     <Folder Include="PostgreSQL\Repository\" />
-    <Folder Include="Новая папка\" />
+    <Folder Include="Redis\" />
   </ItemGroup>
 
 </Project>
