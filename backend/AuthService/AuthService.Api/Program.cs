@@ -1,7 +1,8 @@
+using AuthService.Api;
+using AuthService.Infrastructure;
+using AuthServce.Application;
 using AuthService.Infrastructure.PostgreSQL;
-using FluentValidation;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection;
 
 internal class Program
 {
@@ -9,37 +10,17 @@ internal class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        // Add services to the container.
+        builder.Services
+            .AddApiServices(builder.Configuration)
+            .AddInfrastructureServices(builder.Configuration)
+            .AddApplicationServices(builder.Configuration);
 
-        builder.Services.AddControllers();
-        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-        builder.Services.AddEndpointsApiExplorer();
-        builder.Services.AddSwaggerGen();
-        builder.Services.AddValidatorsFromAssemblyContaining(typeof(Program));
-        builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
-
-
-        builder.Services.AddDbContext<AuthDbContext>(options =>
-        {
-            options.UseNpgsql(builder.Configuration.GetConnectionString("DbConnection"));
-        });
 
         var app = builder.Build();
 
         MigrateDb(app);
 
-        // Configure the HTTP request pipeline.
-        if (app.Environment.IsDevelopment())
-        {
-            app.UseSwagger();
-            app.UseSwaggerUI();
-        }
-
-        app.UseHttpsRedirection();
-
-        app.UseAuthorization();
-
-        app.MapControllers();
+        app.UseApiServices();
 
         app.Run();
     }

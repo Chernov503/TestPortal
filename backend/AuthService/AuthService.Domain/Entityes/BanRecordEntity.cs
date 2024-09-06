@@ -11,5 +11,6 @@ namespace AuthService.Domain.Entityes
     {
         public string Email { get; set; }
         public string BanMessage { get; set; }
+        public DateTime DateExp { get; set; }
     }
 }
