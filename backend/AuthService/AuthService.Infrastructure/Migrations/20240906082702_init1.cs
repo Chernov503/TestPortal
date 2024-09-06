@@ -16,7 +16,8 @@ namespace AuthService.Infrastructure.Migrations
                 columns: table => new
                 {
                     Email = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: false),
-                    BanMessage = table.Column<string>(type: "character varying(1000)", maxLength: 1000, nullable: false, defaultValue: "No message provided")
+                    BanMessage = table.Column<string>(type: "character varying(1000)", maxLength: 1000, nullable: false),
+                    DateExp = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -24,31 +25,20 @@ namespace AuthService.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Users",
+                name: "UserTestAccesses",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    Firstname = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
-                    Surname = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
-                    Email = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: false),
-                    Password = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: false),
-                    Company = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
-                    Role = table.Column<int>(type: "integer", nullable: false)
+                    TestId = table.Column<Guid>(type: "uuid", nullable: false),
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Users", x => x.Id);
+                    table.PrimaryKey("PK_UserTestAccesses", x => new { x.TestId, x.UserId });
                 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_BanRecords_Email",
                 table: "BanRecords",
-                column: "Email",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Users_Email",
-                table: "Users",
                 column: "Email",
                 unique: true);
         }
@@ -60,7 +50,7 @@ namespace AuthService.Infrastructure.Migrations
                 name: "BanRecords");
 
             migrationBuilder.DropTable(
-                name: "Users");
+                name: "UserTestAccesses");
         }
     }
 }

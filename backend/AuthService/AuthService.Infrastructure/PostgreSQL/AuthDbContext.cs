@@ -6,7 +6,7 @@ namespace AuthService.Infrastructure.PostgreSQL
     public class AuthDbContext : DbContext
     {
         public DbSet<BanRecordEntity> BanRecords { get; set; }
-        public DbSet<UserEntity> Users { get; set; }
+        public DbSet<UserTestAccessEntity> UserTestAccesses { get; set; }
 
         public AuthDbContext(DbContextOptions<AuthDbContext> options) : base(options)
         {
@@ -17,45 +17,27 @@ namespace AuthService.Infrastructure.PostgreSQL
             #region BanRecordsBuilder
 
             var BanRecordsBuilder = modelBuilder.Entity<BanRecordEntity>();
-            
+
             BanRecordsBuilder.HasKey(blr => blr.Email);
             BanRecordsBuilder.Property(blr => blr.Email)
                 .IsRequired()
                 .HasMaxLength(256);
             BanRecordsBuilder.Property(blr => blr.BanMessage)
                 .IsRequired()
-                .HasMaxLength(1000)
-                .HasDefaultValue("No message provided");
+                .HasMaxLength(1000);
             BanRecordsBuilder.HasIndex(blr => blr.Email)
-                .IsUnique()
-                .HasDatabaseName("IX_BanRecords_Email");
+                .IsUnique();
+            BanRecordsBuilder.Property(blr => blr.DateExp)
+                .IsRequired();
 
             #endregion
 
-            #region UserBuilder
+            #region UserTestAccessBuilder
 
-            var UserBuilder = modelBuilder.Entity<UserEntity>();
+            var UserTestAccessBuilder = modelBuilder.Entity<UserTestAccessEntity>();
 
-            UserBuilder.HasKey(u => u.Id);
-            UserBuilder.Property(u => u.Firstname)
-                .IsRequired()
-                .HasMaxLength(50);
-            UserBuilder.Property(u => u.Surname)
-                .IsRequired()
-                .HasMaxLength(50);
-            UserBuilder.Property(u => u.Email)
-                .IsRequired()
-                .HasMaxLength(256)
-                .HasAnnotation("Email", "Email address");
-            UserBuilder.Property(u => u.Password)
-                .IsRequired()
-                .HasMaxLength(256);
-            UserBuilder.Property(u => u.Company)
-                .HasMaxLength(100);
-            UserBuilder.Property(u => u.Role)
-                .IsRequired();
-            UserBuilder.HasIndex(u => u.Email).IsUnique();
-
+            UserTestAccessBuilder.HasKey(uta => new{uta.TestId, uta.UserId});
+            
             #endregion
         }
     }
