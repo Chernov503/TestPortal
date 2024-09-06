@@ -46,8 +46,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T18:49:40.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-06T18:49:40.827Z"
             },
             {
               "$type": "Document",
@@ -57,7 +56,7 @@
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Api\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA6AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-09-06T18:41:27.462Z",
               "EditorCaption": ""
@@ -72,8 +71,7 @@
               "RelativeToolTip": "..\\AuthServce.Application\\JWT\\JWTProvider.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAIwBQAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T18:37:49.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-06T18:37:49.7Z"
             },
             {
               "$type": "Document",
@@ -85,8 +83,7 @@
               "RelativeToolTip": "..\\AuthService.Infrastructure\\DependenciInjection.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T18:06:20.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-06T18:06:20.578Z"
             },
             {
               "$type": "Document",
@@ -98,8 +95,7 @@
               "RelativeToolTip": "..\\AuthServce.Application\\DependencyInjection.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAAACAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T17:57:42.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-06T17:57:42.377Z"
             },
             {
               "$type": "Document",
@@ -111,8 +107,7 @@
               "RelativeToolTip": "Controllers\\AuthController.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAuwBMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T13:01:39.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-06T13:01:39.281Z"
             },
             {
               "$type": "Document",
@@ -124,8 +119,7 @@
               "RelativeToolTip": "..\\AuthServce.Application\\Commands\\RegisterCommand.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAAAA0AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T13:01:12.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-06T13:01:12.877Z"
             }
           ]
         }
