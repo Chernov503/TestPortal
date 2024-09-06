@@ -3,26 +3,21 @@
   "WorkspaceRootPath": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Infrastructure\\Migrations\\20240906082702_init1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FA1DF1A-DBEF-454D-8654-FA1A3B6F4894}|..\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.infrastructure\\postgresql\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0F9CE7D-7ACB-4D45-9989-E73438249831}|..\\AuthService.Domain\\AuthService.Domain.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.domain\\entityes\\banrecordentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0F9CE7D-7ACB-4D45-9989-E73438249831}|..\\AuthService.Domain\\AuthService.Domain.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.domain\\entityes\\badloginrecordentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0F9CE7D-7ACB-4D45-9989-E73438249831}|..\\AuthService.Domain\\AuthService.Domain.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.domain\\entityes\\usertestaccessentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0F9CE7D-7ACB-4D45-9989-E73438249831}|..\\AuthService.Domain\\AuthService.Domain.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.domain\\entityes\\sessionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{490DBAB7-32F8-42AC-B9B9-1495B0EDBA64}|AuthService.Api.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{490DBAB7-32F8-42AC-B9B9-1495B0EDBA64}|AuthService.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{679DD8A3-300A-402C-9D37-18776C3E9647}|..\\AuthServce.Application\\AuthServce.Application.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservce.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{679DD8A3-300A-402C-9D37-18776C3E9647}|..\\AuthServce.Application\\AuthServce.Application.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservce.application\\commands\\registercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FA1DF1A-DBEF-454D-8654-FA1A3B6F4894}|..\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.infrastructure\\dependenciinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{490DBAB7-32F8-42AC-B9B9-1495B0EDBA64}|AuthService.Api.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{490DBAB7-32F8-42AC-B9B9-1495B0EDBA64}|AuthService.Api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,97 +27,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20240906082702_init1.cs",
-              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Infrastructure\\Migrations\\20240906082702_init1.cs",
-              "RelativeDocumentMoniker": "..\\AuthService.Infrastructure\\Migrations\\20240906082702_init1.cs",
-              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Infrastructure\\Migrations\\20240906082702_init1.cs",
-              "RelativeToolTip": "..\\AuthService.Infrastructure\\Migrations\\20240906082702_init1.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T08:27:02.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BanRecordEntity.cs",
-              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\Entityes\\BanRecordEntity.cs",
-              "RelativeDocumentMoniker": "..\\AuthService.Domain\\Entityes\\BanRecordEntity.cs",
-              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\Entityes\\BanRecordEntity.cs",
-              "RelativeToolTip": "..\\AuthService.Domain\\Entityes\\BanRecordEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T08:21:13.705Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Infrastructure\\PostgreSQL\\AuthDbContext.cs",
-              "RelativeDocumentMoniker": "..\\AuthService.Infrastructure\\PostgreSQL\\AuthDbContext.cs",
-              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Infrastructure\\PostgreSQL\\AuthDbContext.cs",
-              "RelativeToolTip": "..\\AuthService.Infrastructure\\PostgreSQL\\AuthDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T08:12:10.598Z",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Api\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-06T12:27:41.989Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "BadLoginRecordEntity.cs",
-              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\Entityes\\BadLoginRecordEntity.cs",
-              "RelativeDocumentMoniker": "..\\AuthService.Domain\\Entityes\\BadLoginRecordEntity.cs",
-              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\Entityes\\BadLoginRecordEntity.cs",
-              "RelativeToolTip": "..\\AuthService.Domain\\Entityes\\BadLoginRecordEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAmAAAA",
+              "Title": "DependenciInjection.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Infrastructure\\DependenciInjection.cs",
+              "RelativeDocumentMoniker": "..\\AuthService.Infrastructure\\DependenciInjection.cs",
+              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Infrastructure\\DependenciInjection.cs",
+              "RelativeToolTip": "..\\AuthService.Infrastructure\\DependenciInjection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAACDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T11:01:26.637Z",
+              "WhenOpened": "2024-09-06T12:14:00.457Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserTestAccessEntity.cs",
-              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\Entityes\\UserTestAccessEntity.cs",
-              "RelativeDocumentMoniker": "..\\AuthService.Domain\\Entityes\\UserTestAccessEntity.cs",
-              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\Entityes\\UserTestAccessEntity.cs",
-              "RelativeToolTip": "..\\AuthService.Domain\\Entityes\\UserTestAccessEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "DocumentIndex": 1,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthServce.Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "..\\AuthServce.Application\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthServce.Application\\DependencyInjection.cs",
+              "RelativeToolTip": "..\\AuthServce.Application\\DependencyInjection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAABsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T08:04:27.042Z",
+              "WhenOpened": "2024-09-06T11:50:17.254Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SessionEntity.cs",
-              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\Entityes\\SessionEntity.cs",
-              "RelativeDocumentMoniker": "..\\AuthService.Domain\\Entityes\\SessionEntity.cs",
-              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\Entityes\\SessionEntity.cs",
-              "RelativeToolTip": "..\\AuthService.Domain\\Entityes\\SessionEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "RegisterCommand.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthServce.Application\\Commands\\RegisterCommand.cs",
+              "RelativeDocumentMoniker": "..\\AuthServce.Application\\Commands\\RegisterCommand.cs",
+              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthServce.Application\\Commands\\RegisterCommand.cs",
+              "RelativeToolTip": "..\\AuthServce.Application\\Commands\\RegisterCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T11:01:34.42Z",
+              "WhenOpened": "2024-09-06T10:52:05.646Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Api\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwB0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T10:20:59.971Z"
+              "WhenOpened": "2024-09-05T10:20:59.971Z",
+              "EditorCaption": ""
             }
           ]
         }

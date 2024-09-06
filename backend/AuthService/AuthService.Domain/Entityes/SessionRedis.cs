@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace AuthService.Domain.Entityes
 {
-    public class SessionEntity //Redis
+    public class SessionRedis //Redis
     {
-        public Guid UserId { get; set; }
+        public string Key { get; set; }
+        //Key = $"sessions:{UserId}"
         public string Company { get; set; }
         public int Role { get; set; }
     }

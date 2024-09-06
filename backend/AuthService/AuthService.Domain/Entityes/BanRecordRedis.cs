@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace AuthService.Domain.Entityes
 {
-    public class BadLoginRecordEntity // Redis
+    public class BanRecordRedis
     {
-        public string Key { get; set; } = "bad_login:";
-        public int Count { get; set; }
+        public string Key {  get; set; }
+        //Key = $"baned_users:{email}"
+        public string Message { get; set; }
+
     }
 }
