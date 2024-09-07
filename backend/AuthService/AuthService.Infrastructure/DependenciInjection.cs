@@ -19,6 +19,7 @@ namespace AuthService.Infrastructure
 
             services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect(configuration.GetConnectionString("redis")!));
             services.AddScoped<IBanRecordRepository, BanRecordRepository>();
+            services.AddScoped<ISessionRepository, SessionRepository>();
 
             return services;
         }

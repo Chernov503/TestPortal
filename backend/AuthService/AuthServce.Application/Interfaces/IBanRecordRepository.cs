@@ -5,7 +5,7 @@ namespace AuthServce.Application.Interfaces
 {
     public interface IBanRecordRepository
     {
-        Task<Result<BanRecordEntity>> GetUserBanCashed(string userEmail);
-        Task<Result<BanRecordEntity>> GetUserBan(string userEmail);
+        Task<BanRecordEntity> GetUserBanCashed(string userEmail);
+        Task<BanRecordEntity> GetUserBan(string userEmail);
     }
 }
