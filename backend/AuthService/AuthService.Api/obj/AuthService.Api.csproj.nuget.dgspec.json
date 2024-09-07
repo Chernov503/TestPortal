@@ -32,7 +32,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\AuthService.Domain.csproj": {
+                "projectPath": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\AuthService.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -292,6 +296,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthServce.Application\\AuthServce.Application.csproj": {
+                "projectPath": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthServce.Application\\AuthServce.Application.csproj"
+              },
               "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\AuthService.Domain.csproj": {
                 "projectPath": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\AuthService.Domain.csproj"
               }

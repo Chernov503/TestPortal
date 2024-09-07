@@ -378,6 +378,16 @@
             "related": ".xml"
           }
         }
+      },
+      "AuthService.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/AuthService.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AuthService.Domain.dll": {}
+        }
       }
     }
   },
@@ -965,10 +975,16 @@
         "system.identitymodel.tokens.jwt.8.0.2.nupkg.sha512",
         "system.identitymodel.tokens.jwt.nuspec"
       ]
+    },
+    "AuthService.Domain/1.0.0": {
+      "type": "project",
+      "path": "../AuthService.Domain/AuthService.Domain.csproj",
+      "msbuildProject": "../AuthService.Domain/AuthService.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "AuthService.Domain >= 1.0.0",
       "MediatR >= 12.4.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.8",
       "Microsoft.EntityFrameworkCore >= 8.0.8",
@@ -1009,7 +1025,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\AuthService.Domain.csproj": {
+              "projectPath": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\AuthService.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
