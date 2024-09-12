@@ -31,15 +31,13 @@ namespace AuthService.Api.Controllers
             }
 
             var registerResult = await _mediator.Send(new RegisterCommand(request), ct);
+            if (!registerResult.IsSuccess())
+            {
+                return BadRequest(registerResult.Error.Message);
+            }
 
-            var guid = Guid.NewGuid();
-            var jwt = _jwtProvider.GenerateToken(guid, ct);
-
-            //_redis.StringSet("myKey", "myValue", TimeSpan.FromSeconds(5));
-            //Thread.Sleep(10000);
-            //string value = _redis.StringGet("myKey");
-
-            return Ok(new {guid, jwt });
+            var jwtToken = registerResult.Value;
+            return Ok(jwtToken);
         }
 
 
