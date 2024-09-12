@@ -1,8 +1,9 @@
-﻿using AuthServce.Application;
-using FluentValidation;
+﻿using FluentValidation;
 using System.Net.Http.Json;
-using Contracts.Requests;
-using Contracts.Responses;
+using AuthServce.Application;
+using AuthServce.Application.Clients.UserService.Interface;
+using AuthService.Contracts.Responses;
+using AuthService.Contracts.Requests;
 
 namespace AuthService.Infrastructure.Clients
 {
@@ -12,10 +13,10 @@ namespace AuthService.Infrastructure.Clients
         private readonly HttpClient _httpClient = httpClient;
         private readonly IValidator<UserServiceRegistrationResponse> _validator = validator;
 
-        public async Task<Result<UserServiceRegistrationResponse>> RegisterUserAsync(UserServiceRegistrationRequest request)
+        public async Task<Result<UserServiceRegistrationResponse>> RegisterUserAsync(UserServiceRegistrationRequest request, CancellationToken ct)
         {
             var content = JsonContent.Create(request);
-            var response = await _httpClient.PostAsync("register", content);
+            var response = await _httpClient.PostAsync("register", content, ct); //TODO: прикрутить реальный url
 
             if (!response.IsSuccessStatusCode)
             {
@@ -24,7 +25,7 @@ namespace AuthService.Infrastructure.Clients
 
             var responseContent = await response.Content.ReadFromJsonAsync<UserServiceRegistrationResponse>();
 
-            var validationResult = _validator.Validate(responseContent);
+            var validationResult = _validator.Validate(responseContent!);
             if (!validationResult.IsValid)
             {
                 var errors = string.Join(", ", validationResult.Errors.Select(e => e.ErrorMessage));

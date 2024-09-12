@@ -1,4 +1,4 @@
-﻿using Contracts.Requests;
+﻿using AuthService.Contracts.Requests;
 using FluentValidation;
 
 namespace Contracts.Validators
@@ -15,29 +15,29 @@ namespace Contracts.Validators
         #endregion
         public RegisterRequestValidator()
         {
-            RuleFor(register => register.password)
+            RuleFor(register => register.Password)
                 .NotNull().WithMessage("Password shoudn't be null")
                 .NotEmpty().WithMessage("Password shoudn't be empty")
                 .MinimumLength(MIN_LENGHT_PASS).WithMessage($"Password can't be less than {MIN_LENGHT_PASS}")
                 .Matches(@"[A-Z]").WithMessage("Password must contain at least one uppercase letter.")
                 .Matches(@"[\W_]").WithMessage("Password must contain at least one special character.");
 
-            RuleFor(register => register.email)
+            RuleFor(register => register.Email)
                 .EmailAddress().WithMessage("Not correct email");
 
-            RuleFor(register => register.firstName)
+            RuleFor(register => register.FirstName)
                 .NotNull().WithMessage("Name shoudn't be null")
                 .NotEmpty().WithMessage("Name shoudn't be empty")
                 .MaximumLength(MAX_LENGHT_FIRST_NAME).WithMessage($"Too long name (more than {MAX_LENGHT_FIRST_NAME})")
                 .Matches(@"^[a-zA-Z ]+$").WithMessage("Incorrect symbols");
 
-            RuleFor(register => register.surName)
+            RuleFor(register => register.SurName)
                 .NotNull().WithMessage("Surname shoudn't be null")
                 .NotEmpty().WithMessage("Surname shoudn't be empty")
                 .MaximumLength(MAX_LENGHT_SECOND_NAME).WithMessage($"Too long Surname (more than {MAX_LENGHT_SECOND_NAME})")
                 .Matches(@"^[a-zA-Z ]+$").WithMessage("Incorrect symbols");
 
-            RuleFor(register => register.company)
+            RuleFor(register => register.Company)
                 .NotNull().WithMessage("Company shoudn't be null")
                 .NotEmpty().WithMessage("Company shoudn't be empty")
                 .MaximumLength(MAX_LENGHT_COMPANY_NAME).WithMessage($"Too long Company name (more than {MAX_LENGHT_COMPANY_NAME})");

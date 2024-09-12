@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "AutoMapper/13.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "FluentValidation/11.9.2": {
         "type": "package",
         "compile": {
@@ -1104,7 +1120,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "AuthService.Contracts": "1.0.0",
           "AuthService.Domain": "1.0.0",
+          "AutoMapper": "13.0.1",
           "MediatR": "12.4.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.8",
           "Microsoft.EntityFrameworkCore": "8.0.8",
@@ -1119,6 +1137,20 @@
           "bin/placeholder/AuthServce.Application.dll": {}
         }
       },
+      "AuthService.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "FluentValidation": "11.9.2",
+          "FluentValidation.DependencyInjectionExtensions": "11.9.2"
+        },
+        "compile": {
+          "bin/placeholder/AuthService.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AuthService.Contracts.dll": {}
+        }
+      },
       "AuthService.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -1128,24 +1160,25 @@
         "runtime": {
           "bin/placeholder/AuthService.Domain.dll": {}
         }
-      },
-      "Contracts/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "FluentValidation": "11.9.2",
-          "FluentValidation.DependencyInjectionExtensions": "11.9.2"
-        },
-        "compile": {
-          "bin/placeholder/Contracts.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Contracts.dll": {}
-        }
       }
     }
   },
   "libraries": {
+    "AutoMapper/13.0.1": {
+      "sha512": "/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "type": "package",
+      "path": "automapper/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.13.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net6.0/AutoMapper.dll",
+        "lib/net6.0/AutoMapper.xml"
+      ]
+    },
     "FluentValidation/11.9.2": {
       "sha512": "XeHp9LvFvu1fsQ/NvDCymV02GOCB1nz7ZUhfpI3uMhCcHTkV1K5bMkv+Nc/kuNYyAsX5+5bcmUanIEMd5QN+Eg==",
       "type": "package",
@@ -2852,22 +2885,21 @@
       "path": "../AuthServce.Application/AuthServce.Application.csproj",
       "msbuildProject": "../AuthServce.Application/AuthServce.Application.csproj"
     },
+    "AuthService.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../AuthService.Contracts/AuthService.Contracts.csproj",
+      "msbuildProject": "../AuthService.Contracts/AuthService.Contracts.csproj"
+    },
     "AuthService.Domain/1.0.0": {
       "type": "project",
       "path": "../AuthService.Domain/AuthService.Domain.csproj",
       "msbuildProject": "../AuthService.Domain/AuthService.Domain.csproj"
-    },
-    "Contracts/1.0.0": {
-      "type": "project",
-      "path": "../Contracts/Contracts.csproj",
-      "msbuildProject": "../Contracts/Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "AuthServce.Application >= 1.0.0",
       "AuthService.Domain >= 1.0.0",
-      "Contracts >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.8",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.4",
@@ -2912,9 +2944,6 @@
             },
             "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\AuthService.Domain.csproj": {
               "projectPath": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\AuthService.Domain.csproj"
-            },
-            "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\Contracts\\Contracts.csproj": {
-              "projectPath": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\Contracts\\Contracts.csproj"
             }
           }
         }

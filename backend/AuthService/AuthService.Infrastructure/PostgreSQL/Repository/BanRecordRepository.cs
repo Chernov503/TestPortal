@@ -20,7 +20,7 @@ public class BanRecordRepository(AuthDbContext authDbContext,
     #endregion
 
     #region Methods
-    public async Task<BanRecordEntity> GetUserBanCashed(string userEmail)
+    public async Task<BanRecordEntity> GetUserBanCashed(string userEmail, CancellationToken ct)
     {
         var banRecordJson = await _redis.StringGetAsync(BAN_RECORD_REDIS_KEY + userEmail);
 
@@ -30,7 +30,7 @@ public class BanRecordRepository(AuthDbContext authDbContext,
             return banRecord!;
         }
 
-        var banRecordEntity = await _context.BanRecords.SingleOrDefaultAsync(bre => bre.Email == userEmail);
+        var banRecordEntity = await _context.BanRecords.SingleOrDefaultAsync(bre => bre.Email == userEmail, ct);
         if (banRecordEntity != null)
         {
             await _redis.StringSetAsync(BAN_RECORD_REDIS_KEY + userEmail,
@@ -42,9 +42,9 @@ public class BanRecordRepository(AuthDbContext authDbContext,
     }
 
 
-    public async Task<BanRecordEntity> GetUserBan(string userEmail)
+    public async Task<BanRecordEntity> GetUserBan(string userEmail, CancellationToken ct)
     {
-        var banRecordEntity = await _context.BanRecords.SingleOrDefaultAsync(bre => bre.Email == userEmail);
+        var banRecordEntity = await _context.BanRecords.SingleOrDefaultAsync(bre => bre.Email == userEmail, ct);
         return banRecordEntity;
     }
 

@@ -17,7 +17,7 @@ namespace AuthService.Infrastructure.PostgreSQL.Repository
 
         #region Methods
 
-        public async Task CreateSession(SessionRedis session, Guid userId)
+        public async Task CreateSession(SessionRedis session, Guid userId, CancellationToken ct)
             => await _redis.StringSetAndGetAsync(SESSION_REDIS_KEY + userId,
                                                  JsonSerializer.Serialize(session),
                                                  TimeSpan.FromMinutes(SESSION_REDIS_TTL_MINUTES));

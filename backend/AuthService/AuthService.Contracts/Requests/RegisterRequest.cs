@@ -1,6 +1,6 @@
-﻿namespace Contracts.Requests
+﻿namespace AuthService.Contracts.Requests
 {
-    public class UserServiceRegistrationRequest
+    public class RegisterRequest
     {
         public string FirstName { get; set; } = string.Empty;
         public string SurName { get; set; } = string.Empty;

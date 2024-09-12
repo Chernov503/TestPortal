@@ -26,7 +26,6 @@
   <ItemGroup>
     <ProjectReference Include="..\AuthServce.Application\AuthServce.Application.csproj" />
     <ProjectReference Include="..\AuthService.Domain\AuthService.Domain.csproj" />
-    <ProjectReference Include="..\Contracts\Contracts.csproj" />
   </ItemGroup>
 
 </Project>

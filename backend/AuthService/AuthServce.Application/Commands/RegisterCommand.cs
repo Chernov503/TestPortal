@@ -1,53 +1,52 @@
-﻿using MediatR;
+﻿using AuthServce.Application.Clients.UserService.Interface;
+using AuthServce.Application.Interfaces;
+using AuthService.Contracts.Requests;
+using AuthService.Contracts.Responses;
+using AuthService.Domain.Entityes;
+using AutoMapper;
+using MediatR;
 
 namespace AuthServce.Application.Commands
 {
-    //public class RegisterCommand : IRequest<>
-    //{
-    //    public string Email { get; set; }
-    //    public string Password { get; set; }
-    //    public string Firstname { get; set; }
-    //    public string Surname { get; set; }
-    //    public string Company { get; set; }
+    public class RegisterCommand(RegisterRequest request) : IRequest<Result<string>>
+    {
+        public RegisterRequest _request = request;
+    }
 
-    //    public RegisterCommand(RegisterRequest)
-    //    {
-    //        Email = email;
-    //        Name = name;
-    //        Password = password;
-    //    }
-    //}
+    public class RegisterCommandHandler(IBanRecordRepository banRepository,
+                                        ISessionRepository sessionRepository,
+                                        IUserServiceClient userServiceClient,
+                                        IMapper mapper,
+                                        IJwtProvider jwtProvider) : IRequestHandler<RegisterCommand, Result<string>>
+    {
+        private readonly IBanRecordRepository _banRepository = banRepository;
+        private readonly ISessionRepository _sessionRepository = sessionRepository;
+        private readonly IUserServiceClient _userServiceClient = userServiceClient;
+        private readonly IMapper _mapper = mapper;
+        private readonly IJwtProvider _jwtProvider = jwtProvider;
 
-    //public class RegisterCommandHandler : IRequestHandler<RegisterCommand, Guid>
-    //{
-    //    private readonly IPasswordHasher _passwordHasher;
-    //    private readonly IUserRepository _userRepository;
+        public async Task<Result<string>> Handle(RegisterCommand command, CancellationToken ct)
+        {
+            var isUserBaned = await _banRepository.GetUserBanCashed(command._request.Email, ct) is not null;
+            if (isUserBaned)
+            {
+                return Result<string>.FromError("User baned");
+            }
 
-    //    public RegisterCommandHandler(IPasswordHasher passwordHasher, IUserRepository userRepository)
-    //    {
-    //        _passwordHasher = passwordHasher;
-    //        _userRepository = userRepository;
-    //    }
+            var registerRequest = _mapper.Map<UserServiceRegistrationRequest>(command._request);
+            var registerResult = await _userServiceClient.RegisterUserAsync(registerRequest, ct);
+            if (!registerResult.IsSuccess())
+            {
+                return Result<string>.FromError($"{registerResult.Error}");
+            }
 
-    //    public async Task<Guid> Handle(RegisterCommand request, CancellationToken cancellationToken)
-    //    {
-    //        var userExist = await _userRepository.ExistAsync(request.Email, cancellationToken);
-    //        if (userExist)
-    //            throw new UserAlreadyCreatedException(request.Email);
+            var session = _mapper.Map<SessionRedis>(registerResult.Value);
+            await _sessionRepository.CreateSession(session, registerResult.Value.Id, ct);
 
-    //        var user = new User
-    //        {
-    //            Id = Guid.NewGuid(),
-    //            Email = request.Email,
-    //            Name = request.Name,
-    //            CreatedAt = DateTime.UtcNow,
-    //            PasswordHash = _passwordHasher.HashPassword(request.Password)
-    //        };
-    //        var id = await _userRepository.Register(user, cancellationToken);
-
-    //        return id;
-    //    }
-    //}
+            var jwt = _jwtProvider.GenerateToken(registerResult.Value.Id, ct);
+            return Result<string>.FromSuccess(jwt);
+        }
+    }
 
 }
 
