@@ -1,4 +1,4 @@
-﻿namespace AuthService.Infrastructure.Clients.DTO
+﻿namespace Contracts.Responses
 {
     public class UserServiceRegistrationResponse
     {

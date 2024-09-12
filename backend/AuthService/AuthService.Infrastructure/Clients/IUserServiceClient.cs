@@ -1,5 +1,6 @@
 ﻿using AuthServce.Application;
-using AuthService.Infrastructure.Clients.DTO;
+using Contracts.Requests;
+using Contracts.Responses;
 
 namespace AuthService.Infrastructure.Clients
 {

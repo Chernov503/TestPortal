@@ -3,14 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{679DD8A3-300A-402C-9D37-18776C3E9647}|..\\AuthServce.Application\\AuthServce.Application.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservce.application\\models\\userregistrationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{490DBAB7-32F8-42AC-B9B9-1495B0EDBA64}|AuthService.Api.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{490DBAB7-32F8-42AC-B9B9-1495B0EDBA64}|AuthService.Api.csproj|solutionrelative:dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{679DD8A3-300A-402C-9D37-18776C3E9647}|..\\AuthServce.Application\\AuthServce.Application.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservce.application\\commands\\registercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{490DBAB7-32F8-42AC-B9B9-1495B0EDBA64}|AuthService.Api.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.api\\dto\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{490DBAB7-32F8-42AC-B9B9-1495B0EDBA64}|AuthService.Api.csproj|solutionrelative:dto\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{490DBAB7-32F8-42AC-B9B9-1495B0EDBA64}|AuthService.Api.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{490DBAB7-32F8-42AC-B9B9-1495B0EDBA64}|AuthService.Api.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F01E4DD-7948-4CF0-8ADF-6E6F19106BC0}|..\\Contracts\\Contracts.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\contracts\\validators\\registerrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F01E4DD-7948-4CF0-8ADF-6E6F19106BC0}|..\\Contracts\\Contracts.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\contracts\\requests\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FA1DF1A-DBEF-454D-8654-FA1A3B6F4894}|..\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.infrastructure\\clients\\iuserserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FA1DF1A-DBEF-454D-8654-FA1A3B6F4894}|..\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.infrastructure\\clients\\userserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FA1DF1A-DBEF-454D-8654-FA1A3B6F4894}|..\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.infrastructure\\clients\\userservicesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F01E4DD-7948-4CF0-8ADF-6E6F19106BC0}|..\\Contracts\\Contracts.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\contracts\\requests\\userserviceregistrationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F01E4DD-7948-4CF0-8ADF-6E6F19106BC0}|..\\Contracts\\Contracts.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\contracts\\responses\\userserviceregistrationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F01E4DD-7948-4CF0-8ADF-6E6F19106BC0}|..\\Contracts\\Contracts.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\contracts\\validators\\userserviceregistrationresponsevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{679DD8A3-300A-402C-9D37-18776C3E9647}|..\\AuthServce.Application\\AuthServce.Application.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservce.application\\models\\userregistrationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,27 +53,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserRegistrationModel.cs",
-              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthServce.Application\\Models\\UserRegistrationModel.cs",
-              "RelativeDocumentMoniker": "..\\AuthServce.Application\\Models\\UserRegistrationModel.cs",
-              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthServce.Application\\Models\\UserRegistrationModel.cs",
-              "RelativeToolTip": "..\\AuthServce.Application\\Models\\UserRegistrationModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA7AAAA",
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Api\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Api\\DependencyInjection.cs",
+              "RelativeToolTip": "DependencyInjection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T09:37:27.186Z",
+              "WhenOpened": "2024-09-12T10:04:43.288Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RegisterRequest.cs",
-              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Api\\DTO\\RegisterRequest.cs",
-              "RelativeDocumentMoniker": "DTO\\RegisterRequest.cs",
-              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Api\\DTO\\RegisterRequest.cs",
-              "RelativeToolTip": "DTO\\RegisterRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T09:35:30.713Z",
+              "WhenOpened": "2024-09-12T10:03:51.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterRequestValidator.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\Contracts\\Validators\\RegisterRequestValidator.cs",
+              "RelativeDocumentMoniker": "..\\Contracts\\Validators\\RegisterRequestValidator.cs",
+              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\Contracts\\Validators\\RegisterRequestValidator.cs",
+              "RelativeToolTip": "..\\Contracts\\Validators\\RegisterRequestValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T10:03:36.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\Contracts\\Requests\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "..\\Contracts\\Requests\\RegisterRequest.cs",
+              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\Contracts\\Requests\\RegisterRequest.cs",
+              "RelativeToolTip": "..\\Contracts\\Requests\\RegisterRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T10:03:28.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserServiceRegistrationResponse.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\Contracts\\Responses\\UserServiceRegistrationResponse.cs",
+              "RelativeDocumentMoniker": "..\\Contracts\\Responses\\UserServiceRegistrationResponse.cs",
+              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\Contracts\\Responses\\UserServiceRegistrationResponse.cs",
+              "RelativeToolTip": "..\\Contracts\\Responses\\UserServiceRegistrationResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T09:55:52.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserServiceRegistrationRequest.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\Contracts\\Requests\\UserServiceRegistrationRequest.cs",
+              "RelativeDocumentMoniker": "..\\Contracts\\Requests\\UserServiceRegistrationRequest.cs",
+              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\Contracts\\Requests\\UserServiceRegistrationRequest.cs",
+              "RelativeToolTip": "..\\Contracts\\Requests\\UserServiceRegistrationRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T09:55:46.662Z",
               "EditorCaption": ""
             },
             {
@@ -56,9 +136,74 @@
               "RelativeDocumentMoniker": "..\\AuthServce.Application\\Commands\\RegisterCommand.cs",
               "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthServce.Application\\Commands\\RegisterCommand.cs",
               "RelativeToolTip": "..\\AuthServce.Application\\Commands\\RegisterCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T09:33:46.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserServiceRegistrationResponseValidator.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\Contracts\\Validators\\UserServiceRegistrationResponseValidator.cs",
+              "RelativeDocumentMoniker": "..\\Contracts\\Validators\\UserServiceRegistrationResponseValidator.cs",
+              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\Contracts\\Validators\\UserServiceRegistrationResponseValidator.cs",
+              "RelativeToolTip": "..\\Contracts\\Validators\\UserServiceRegistrationResponseValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T09:55:57.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUserServiceClient.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Infrastructure\\Clients\\IUserServiceClient.cs",
+              "RelativeDocumentMoniker": "..\\AuthService.Infrastructure\\Clients\\IUserServiceClient.cs",
+              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Infrastructure\\Clients\\IUserServiceClient.cs",
+              "RelativeToolTip": "..\\AuthService.Infrastructure\\Clients\\IUserServiceClient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T09:54:44.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserServiceClient.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Infrastructure\\Clients\\UserServiceClient.cs",
+              "RelativeDocumentMoniker": "..\\AuthService.Infrastructure\\Clients\\UserServiceClient.cs",
+              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Infrastructure\\Clients\\UserServiceClient.cs",
+              "RelativeToolTip": "..\\AuthService.Infrastructure\\Clients\\UserServiceClient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T09:54:43.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserServiceSettings.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Infrastructure\\Clients\\UserServiceSettings.cs",
+              "RelativeDocumentMoniker": "..\\AuthService.Infrastructure\\Clients\\UserServiceSettings.cs",
+              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Infrastructure\\Clients\\UserServiceSettings.cs",
+              "RelativeToolTip": "..\\AuthService.Infrastructure\\Clients\\UserServiceSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T09:55:09.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserRegistrationModel.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthServce.Application\\Models\\UserRegistrationModel.cs",
+              "RelativeDocumentMoniker": "..\\AuthServce.Application\\Models\\UserRegistrationModel.cs",
+              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthServce.Application\\Models\\UserRegistrationModel.cs",
+              "RelativeToolTip": "..\\AuthServce.Application\\Models\\UserRegistrationModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T09:37:27.186Z",
               "EditorCaption": ""
             }
           ]

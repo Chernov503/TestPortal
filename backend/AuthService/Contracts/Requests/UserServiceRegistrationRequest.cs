@@ -1,4 +1,4 @@
-﻿namespace AuthService.Infrastructure.Clients.DTO
+﻿namespace Contracts.Requests
 {
     public class UserServiceRegistrationRequest
     {

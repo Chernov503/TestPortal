@@ -1,9 +1,8 @@
 ﻿using AuthServce.Application;
-using AuthServce.Application.Interfaces;
-using AuthService.Infrastructure.Clients.DTO;
 using FluentValidation;
 using System.Net.Http.Json;
-using System.Text.Json;
+using Contracts.Requests;
+using Contracts.Responses;
 
 namespace AuthService.Infrastructure.Clients
 {

@@ -2,21 +2,21 @@
 
 namespace AuthServce.Application.Commands
 {
-    public class RegisterCommand : IRequest<>
-    {
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public string Firstname { get; set; }
-        public string Surname { get; set; }
-        public string Company { get; set; }
+    //public class RegisterCommand : IRequest<>
+    //{
+    //    public string Email { get; set; }
+    //    public string Password { get; set; }
+    //    public string Firstname { get; set; }
+    //    public string Surname { get; set; }
+    //    public string Company { get; set; }
 
-        public RegisterCommand(RegisterRequest)
-        {
-            Email = email;
-            Name = name;
-            Password = password;
-        }
-    }
+    //    public RegisterCommand(RegisterRequest)
+    //    {
+    //        Email = email;
+    //        Name = name;
+    //        Password = password;
+    //    }
+    //}
 
     //public class RegisterCommandHandler : IRequestHandler<RegisterCommand, Guid>
     //{
@@ -47,6 +47,7 @@ namespace AuthServce.Application.Commands
 
     //        return id;
     //    }
+    //}
 
 }
-}
+

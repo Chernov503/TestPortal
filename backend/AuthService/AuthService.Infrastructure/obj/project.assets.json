@@ -15,6 +15,23 @@
           }
         }
       },
+      "FluentValidation.DependencyInjectionExtensions/11.9.2": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "11.9.2",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -1111,6 +1128,20 @@
         "runtime": {
           "bin/placeholder/AuthService.Domain.dll": {}
         }
+      },
+      "Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "FluentValidation": "11.9.2",
+          "FluentValidation.DependencyInjectionExtensions": "11.9.2"
+        },
+        "compile": {
+          "bin/placeholder/Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contracts.dll": {}
+        }
       }
     }
   },
@@ -1138,6 +1169,23 @@
         "lib/netstandard2.0/FluentValidation.xml",
         "lib/netstandard2.1/FluentValidation.dll",
         "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.9.2": {
+      "sha512": "PMAdnR1fX1c8DyUvu5YvRa0V0JHES8vzXnVX0OSS3z9W/SkuHqcGrtiSOdW1QehG3vZhXsKhqf3wgDzW/OYahA==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.9.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.dependencyinjectionextensions.11.9.2.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -2808,13 +2856,18 @@
       "type": "project",
       "path": "../AuthService.Domain/AuthService.Domain.csproj",
       "msbuildProject": "../AuthService.Domain/AuthService.Domain.csproj"
+    },
+    "Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Contracts/Contracts.csproj",
+      "msbuildProject": "../Contracts/Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "AuthServce.Application >= 1.0.0",
       "AuthService.Domain >= 1.0.0",
-      "FluentValidation >= 11.9.2",
+      "Contracts >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.8",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.4",
@@ -2859,6 +2912,9 @@
             },
             "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\AuthService.Domain.csproj": {
               "projectPath": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\AuthService.Domain.csproj"
+            },
+            "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\Contracts\\Contracts.csproj"
             }
           }
         }
@@ -2878,10 +2934,6 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-          "FluentValidation": {
-            "target": "Package",
-            "version": "[11.9.2, )"
-          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",

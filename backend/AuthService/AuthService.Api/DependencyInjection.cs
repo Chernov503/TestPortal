@@ -1,5 +1,4 @@
 ﻿using FluentValidation;
-using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
 namespace AuthService.Api
 {

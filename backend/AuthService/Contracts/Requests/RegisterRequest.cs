@@ -1,4 +1,4 @@
-﻿namespace AuthService.Api.DTO
+﻿namespace Contracts.Requests
 {
     public record RegisterRequest(
         string password,

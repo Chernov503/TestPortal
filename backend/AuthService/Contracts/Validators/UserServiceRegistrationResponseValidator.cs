@@ -1,6 +1,7 @@
-﻿using FluentValidation;
+﻿using Contracts.Responses;
+using FluentValidation;
 
-namespace AuthService.Infrastructure.Clients.DTO.Validators
+namespace Contracts.Validators
 {
     public class UserServiceRegistrationResponseValidator : AbstractValidator<UserServiceRegistrationResponse>
     {

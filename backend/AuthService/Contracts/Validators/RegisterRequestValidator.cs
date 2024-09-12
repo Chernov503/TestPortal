@@ -1,6 +1,7 @@
-﻿using FluentValidation;
+﻿using Contracts.Requests;
+using FluentValidation;
 
-namespace AuthService.Api.DTO.Validators
+namespace Contracts.Validators
 {
     public class RegisterRequestValidator : AbstractValidator<RegisterRequest>
     {
@@ -12,7 +13,7 @@ namespace AuthService.Api.DTO.Validators
         private const int MIN_LENGHT_PASS = 8;
 
         #endregion
-        public RegisterRequestValidator() 
+        public RegisterRequestValidator()
         {
             RuleFor(register => register.password)
                 .NotNull().WithMessage("Password shoudn't be null")

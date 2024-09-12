@@ -1,5 +1,5 @@
 ﻿using AuthServce.Application.JWT;
-using AuthService.Api.DTO;
+using Contracts.Requests;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using StackExchange.Redis;
