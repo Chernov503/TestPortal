@@ -8,7 +8,7 @@ using System.Text.Json;
 namespace AuthService.Infrastructure.PostgreSQL.Repository;
 
 public class BanRecordRepository(AuthDbContext authDbContext,
-                                     IConnectionMultiplexer muxer) : IBanRecordRepository
+                                 IConnectionMultiplexer muxer) : IBanRecordRepository
 {
     #region Props
 
@@ -22,7 +22,7 @@ public class BanRecordRepository(AuthDbContext authDbContext,
     #region Methods
     public async Task<BanRecordEntity> GetUserBanCashed(string userEmail)
     {
-        var banRecordJson = await _redis.StringGetAsync($"{BAN_RECORD_REDIS_KEY}:{userEmail}");
+        var banRecordJson = await _redis.StringGetAsync(BAN_RECORD_REDIS_KEY + userEmail);
 
         if (!banRecordJson.IsNullOrEmpty)
         {

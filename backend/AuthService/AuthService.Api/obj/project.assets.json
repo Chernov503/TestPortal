@@ -1217,6 +1217,7 @@
         "dependencies": {
           "AuthServce.Application": "1.0.0",
           "AuthService.Domain": "1.0.0",
+          "FluentValidation": "11.9.2",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4",
           "StackExchange.Redis": "2.8.12"
         },

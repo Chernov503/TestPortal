@@ -18,15 +18,12 @@ namespace AuthService.Api.Controllers
         [Route("/register")]
         public async Task<ActionResult> Register([FromBody] RegisterRequest request)
         {
-            #region Validation
-
             var result = _registerRequestValidator.Validate(request);
             if (!result.IsValid)
             {
                 return BadRequest(result.Errors.Select(x => x.ErrorMessage));
             }
 
-            #endregion
             var guid = Guid.NewGuid();
             var jwt = _jwtProvider.GenerateToken(guid);
 

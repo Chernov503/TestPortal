@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
@@ -10,15 +11,15 @@ using System.Threading.Tasks;
 
 namespace AuthServce.Application.JWT
 {
-    public class JwtProvider(IConfiguration configuration) : IJwtProvider
+    public class JwtProvider(IConfiguration configuration,
+                             IOptions<JwtSettings> jwtSettings) : IJwtProvider
     {
         private readonly IConfiguration _configuration = configuration;
-
-        protected double ExpiresHours = double.Parse(configuration["JwtSettings:ExpiresHours"]!);
-        protected string SecretKey = configuration["JwtSettings:SecretKey"]!;
+        protected double ExpiresHours = jwtSettings.Value.ExpiresHours;
+        protected string SecretKey = jwtSettings.Value.SecretKey;
         public string GenerateToken(Guid userId)
         {
-            Claim[] claims = { new("UserId", userId.ToString()) };
+            Claim[] claims = { new(ClaimTypes.NameIdentifier, userId.ToString()) };
 
             var signingCredentials = new SigningCredentials(
                  new SymmetricSecurityKey(Encoding.UTF8.GetBytes(SecretKey)), SecurityAlgorithms.HmacSha256);

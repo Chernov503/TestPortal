@@ -30,6 +30,7 @@ namespace AuthServce.Application
             services.AddAuthorization();
 
             services.AddScoped<IJwtProvider, JwtProvider>();
+            services.Configure<JwtSettings>(configuration.GetSection("JwtSettings"));
 
 
             return services;

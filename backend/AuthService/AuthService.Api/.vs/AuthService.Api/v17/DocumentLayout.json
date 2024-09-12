@@ -3,26 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6FA1DF1A-DBEF-454D-8654-FA1A3B6F4894}|..\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.infrastructure\\dependenciinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{679DD8A3-300A-402C-9D37-18776C3E9647}|..\\AuthServce.Application\\AuthServce.Application.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservce.application\\models\\userregistrationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FA1DF1A-DBEF-454D-8654-FA1A3B6F4894}|..\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.infrastructure\\postgresql\\repository\\sessionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{679DD8A3-300A-402C-9D37-18776C3E9647}|..\\AuthServce.Application\\AuthServce.Application.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservce.application\\commands\\registercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FA1DF1A-DBEF-454D-8654-FA1A3B6F4894}|..\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.infrastructure\\postgresql\\repository\\banrecordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{679DD8A3-300A-402C-9D37-18776C3E9647}|..\\AuthServce.Application\\AuthServce.Application.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservce.application\\interfaces\\isessionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{679DD8A3-300A-402C-9D37-18776C3E9647}|..\\AuthServce.Application\\AuthServce.Application.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservce.application\\interfaces\\ibanrecordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0F9CE7D-7ACB-4D45-9989-E73438249831}|..\\AuthService.Domain\\AuthService.Domain.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.domain\\entityes\\sessionredis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{490DBAB7-32F8-42AC-B9B9-1495B0EDBA64}|AuthService.Api.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{490DBAB7-32F8-42AC-B9B9-1495B0EDBA64}|AuthService.Api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{490DBAB7-32F8-42AC-B9B9-1495B0EDBA64}|AuthService.Api.csproj|c:\\users\\sofia\\desktop\\testportal\\backend\\authservice\\authservice.api\\dto\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{490DBAB7-32F8-42AC-B9B9-1495B0EDBA64}|AuthService.Api.csproj|solutionrelative:dto\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,92 +25,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DependenciInjection.cs",
-              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Infrastructure\\DependenciInjection.cs",
-              "RelativeDocumentMoniker": "..\\AuthService.Infrastructure\\DependenciInjection.cs",
-              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Infrastructure\\DependenciInjection.cs",
-              "RelativeToolTip": "..\\AuthService.Infrastructure\\DependenciInjection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABEAAAA",
+              "Title": "UserRegistrationModel.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthServce.Application\\Models\\UserRegistrationModel.cs",
+              "RelativeDocumentMoniker": "..\\AuthServce.Application\\Models\\UserRegistrationModel.cs",
+              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthServce.Application\\Models\\UserRegistrationModel.cs",
+              "RelativeToolTip": "..\\AuthServce.Application\\Models\\UserRegistrationModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T16:18:01.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IBanRecordRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthServce.Application\\Interfaces\\IBanRecordRepository.cs",
-              "RelativeDocumentMoniker": "..\\AuthServce.Application\\Interfaces\\IBanRecordRepository.cs",
-              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthServce.Application\\Interfaces\\IBanRecordRepository.cs",
-              "RelativeToolTip": "..\\AuthServce.Application\\Interfaces\\IBanRecordRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T16:11:46.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SessionRedis.cs",
-              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\Entityes\\SessionRedis.cs",
-              "RelativeDocumentMoniker": "..\\AuthService.Domain\\Entityes\\SessionRedis.cs",
-              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Domain\\Entityes\\SessionRedis.cs",
-              "RelativeToolTip": "..\\AuthService.Domain\\Entityes\\SessionRedis.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T16:06:35.702Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ISessionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthServce.Application\\Interfaces\\ISessionRepository.cs",
-              "RelativeDocumentMoniker": "..\\AuthServce.Application\\Interfaces\\ISessionRepository.cs",
-              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthServce.Application\\Interfaces\\ISessionRepository.cs",
-              "RelativeToolTip": "..\\AuthServce.Application\\Interfaces\\ISessionRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T15:46:19.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SessionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Infrastructure\\PostgreSQL\\Repository\\SessionRepository.cs",
-              "RelativeDocumentMoniker": "..\\AuthService.Infrastructure\\PostgreSQL\\Repository\\SessionRepository.cs",
-              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Infrastructure\\PostgreSQL\\Repository\\SessionRepository.cs",
-              "RelativeToolTip": "..\\AuthService.Infrastructure\\PostgreSQL\\Repository\\SessionRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T15:44:34.553Z",
+              "WhenOpened": "2024-09-12T09:37:27.186Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BanRecordRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Infrastructure\\PostgreSQL\\Repository\\BanRecordRepository.cs",
-              "RelativeDocumentMoniker": "..\\AuthService.Infrastructure\\PostgreSQL\\Repository\\BanRecordRepository.cs",
-              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Infrastructure\\PostgreSQL\\Repository\\BanRecordRepository.cs",
-              "RelativeToolTip": "..\\AuthService.Infrastructure\\PostgreSQL\\Repository\\BanRecordRepository.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwCgAAAAfAAAA",
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Api\\DTO\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "DTO\\RegisterRequest.cs",
+              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Api\\DTO\\RegisterRequest.cs",
+              "RelativeToolTip": "DTO\\RegisterRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T14:18:32.673Z",
+              "WhenOpened": "2024-09-12T09:35:30.713Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthService.Api\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-06T18:41:27.462Z",
+              "DocumentIndex": 1,
+              "Title": "RegisterCommand.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthServce.Application\\Commands\\RegisterCommand.cs",
+              "RelativeDocumentMoniker": "..\\AuthServce.Application\\Commands\\RegisterCommand.cs",
+              "ToolTip": "C:\\Users\\sofia\\Desktop\\TestPortal\\backend\\AuthService\\AuthServce.Application\\Commands\\RegisterCommand.cs",
+              "RelativeToolTip": "..\\AuthServce.Application\\Commands\\RegisterCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T09:33:46.947Z",
               "EditorCaption": ""
             }
           ]
